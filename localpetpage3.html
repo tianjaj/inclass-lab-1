@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Local Pet Adoption</title>
+</head>
+<body>
+<!-- Container is to wrap everything -->
+<div id="container">
+<!-- Website Brand -->
+    <header>Local Cute dogs</header>
+<!-- Main Navigation -->
+<nav>
+    <ul>
+        <li><a href="https://www.adoptapet.com/pet/37562577-brunswick-maine-labrador-retriever-mix">black dogs</a></li>
+        <li><a href="https://www.adoptapet.com/pet/38941197-north-yarmouth-maine-terrier-unknown-type-small-mix">white dogs</a></li>
+        <li><a href="https://www.adoptapet.com/pet/37971177-brunswick-maine-beagle-mix">Yellow dogs</a></li>
+    </ul>
+</nav>
+<!-- Main Content -->
+    <main>
+<h1>The Cute Dogs Need Home</h1>
+<p>Use the nationwide database of dogs looking for good homes below! Search by zip code to meet available dogs in your area. Please note, these dogs are from rescues and shelters nationwide and are not available through the ASPCA. If you live in New York City and are hoping to adopt from us, check out the dogs available at our Adoption Center.</p>
+<img src="images/barry.png" alt="barry" width="300">
+<img src="images/lola.png" alt="lola" width="300">
+<img src="images/noah.png" alt="Noah" width="300">
+<form action="/signup" method="post">
+    <fieldset>
+        <legend>Which dog do you like to take home</legend>
+        <label>Your Full Name</label><br>
+        <input type="text" name="full_name"><br>
+        <label>Your Email Address</label><br>
+        <input type="email" name="email"><br>
+        <label>Your Phone Number</label><br>
+        <input type="text" name="phone"><br>
+        <label>Your Choice</label><br>
+        <input type="radio" name="Dog" value="Barry">Barry<br>
+        <input type="radio" name="Dog" value="Lola">Lola<br>
+        <input type="radio" name="Dog" value="Noah">Noah<br>
+        <label>How should we contact you?</label><br>
+        <select name="contact_method">
+            <option>Email</option>
+            <option>Phone</option>
+            <option>Carrier Pidgeon</option>
+        </select><br>
+        <label>Do you need more information about the dogs?</label><br>
+        <textarea rows="5" columns="40"></textarea><br>
+        <input type="submit" value="Sign Up"><br>
+    </fieldset>
+</form>
+    </main>
+<!-- Footer -->
+    <footer>&copy; Copyright 2023</footer>
+</div>
+<!-- End Container -->
+</body>
+</html>

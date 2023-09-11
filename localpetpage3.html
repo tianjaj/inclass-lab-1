@@ -1,8 +1,14 @@
 <html>
 <head>
     <title>Local Pet Adoption</title>
+    <link rel="stylesheet" href="style.css">
+    <ul>
+        <li>Home</li>
+        <li>Table</li>
+        <li id="active"><a href="localpetpage3.html">Contect</a></li>
+    </ul>
 </head>
-<body>
+<body id="form">
 <!-- Container is to wrap everything -->
 <div id="container">
 <!-- Website Brand -->
@@ -25,25 +31,25 @@
 <form action="/signup" method="post">
     <fieldset>
         <legend>Which dog do you like to take home</legend>
-        <label>Your Full Name</label><br>
-        <input type="text" name="full_name"><br>
-        <label>Your Email Address</label><br>
-        <input type="email" name="email"><br>
-        <label>Your Phone Number</label><br>
-        <input type="text" name="phone"><br>
-        <label>Your Choice</label><br>
-        <input type="radio" name="Dog" value="Barry">Barry<br>
-        <input type="radio" name="Dog" value="Lola">Lola<br>
-        <input type="radio" name="Dog" value="Noah">Noah<br>
-        <label>How should we contact you?</label><br>
+        <label>Your Full Name</label>
+        <input type="text" name="full_name">
+        <label>Your Email Address</label>
+        <input type="email" name="email">
+        <label>Your Phone Number</label>
+        <input type="text" name="phone">
+        <label>Your Choice</label>
+        <input type="radio" name="Dog" value="Barry">Barry
+        <input type="radio" name="Dog" value="Lola">Lola
+        <input type="radio" name="Dog" value="Noah">Noah
+        <label>How should we contact you?</label>
         <select name="contact_method">
             <option>Email</option>
             <option>Phone</option>
             <option>Carrier Pidgeon</option>
         </select><br>
-        <label>Do you need more information about the dogs?</label><br>
-        <textarea rows="5" columns="40"></textarea><br>
-        <input type="submit" value="Sign Up"><br>
+        <label>Do you need more information about the dogs?</label>
+        <textarea rows="5" columns="40"></textarea>
+        <input type="submit" value="Sign Up">
     </fieldset>
 </form>
     </main>

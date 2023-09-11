@@ -1,0 +1,118 @@
+header {
+    background:url(dogpc1.jpg) 0 -200px no-repeat; /* Places image as background*/
+    background-size: 800px;
+    height:400px; /* Sets the header height */
+    padding-top: 100px;
+    padding-left: 100px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: yellowgreen;
+    font-weight: 100px;
+    border: border;
+    font-size:30px;
+}
+li :active {
+    text-decoration: none; /* Remove underline */
+}
+li a:link {
+    color: brown;
+    text-decoration: none; /* Before Click */
+}
+li a:visited {
+    color: #f0037f; 
+    text-decoration: none;/** Afer Click */
+}
+li a:hover {
+    color:grey;
+    text-decoration: none; /*Mouse Over */
+}
+li a:active {
+    color: blue;
+    text-decoration: none; /* Mouse Down*/
+}
+nav {
+    background-color: #fff; 
+    height: 50px;
+    text-align: center;
+    padding-top: 2px;
+    display: inline-block;
+}
+main{
+    margin: 50px;
+}
+main h1 {
+    color:lightseagreen;
+    font-family: Arial;
+    background-color: #fff;
+}
+main p {
+    font-size:14px;
+    color: red;
+    margin: auto;
+    background-color:aqua;
+}
+table {
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+table, caption, th, td {
+    border: 1px solid #000;
+    background-color: yellowgreen;
+    margin: 0 auto 0 auto;
+    float: center;
+}
+th, td {
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    color: #759;
+    border: solid;
+}
+caption {
+    text-transform: uppercase;
+    font-weight: bolder;
+    height: 40px;
+    padding-top: 15px;
+    color: #753a30;
+}
+legend {
+    text-transform: uppercase;
+    font-size: 20px;
+    border: border;
+    color: purple;
+    font-weight: bold;
+}
+label {
+    display: block;
+    margin: 20px 0 0 0;
+    font-weight: bold;
+}
+input {
+    width: 300px;
+}
+input[type="radio"] {
+    width: 25px;
+    display: inline;
+}
+textarea {
+    width: 300px;
+    height: 100px;
+}
+form {
+    background-color: rgb(164, 220, 235);
+    color: red;
+}
+footer {
+    background-color:rgb(218, 213, 213);
+    font-size: 14px;
+    height: 50px;
+    text-align: center;
+    color: blueviolet;
+}

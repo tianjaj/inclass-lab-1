@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Local Pet Adoption Gallery Page</title>
+    <link rel="stylesheet" href="style.css">
+    <ul>
+        <li>Home</li>
+        <li>Table</li>
+        <li>Contect</li>
+        <li id="active"><a href="gallerypage">Gallery</a></li>
+    </ul>
+    <style>
+        /* CSS styles for the gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .photo {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body id="home">
+    <!-- Container is to wrap everything -->
+    <div id="container">
+        <header>Local Cute dogs</header>
+        <main>
+            <h1>More Picutres for Your Future Dogs</h1>
+            <p>Here is more choice for your future family members.</p>
+            <img src="dogpc2.jpg" alt="dogs" width="100" height="80">
+            <img src="dogpc3.jpg" alt="dogs" width="100" height="80">
+            <img src="dog4.jpg" alt="dogs" width="100" height="80">
+            <img src="dog5.jpg" alt="dogs" width="100" height="80">
+            <img src="dog6.jpg" alt="dogs" width="100" height="80">
+            <img src="dog7.jpg" alt="dogs" width="100" height="80">
+            <img src="dog8.jpg" alt="dogs" width="100" height="80">
+            <img src="dog9.jpg" alt="dogs" width="100" height="80">
+            <img src="dog10.jpg" alt="dogs" width="100" height="80">
+            <img src="dog11.jpg" alt="dogs" width="100" height="80">
+
+    <div class="gallery" id="photoGallery">
+        <!-- Photos will be added here using JavaScript -->
+    </div>
+    <script>
+        // JavaScript to populate the gallery with photos
+        document.addEventListener("DOMContentLoaded", function () {
+            // Array of photo URLs
+            var photoArray = [
+            "dogpc2.jpg",
+            "dogpc3.jpg",
+            "dog4.jpg",
+            "dog5.jpg",
+            "dog6.jpg",
+            "dog7.jpg",
+            "dog8.jpg",
+            "dog9.jpg",
+            "dog10.jpg",
+            "dog11.jpg",
+        ];
+
+// Get the gallery container
+var gallery = document.getElementById("dogsgallery");
+
+// Loop through the photoArray and create img elements
+photoArray.forEach(function (photoURL) {
+    var img = document.createElement("img");
+    img.src = photoURL;
+    img.alt = "Photo";
+    img.classList.add("photo"); // Add the "photo" class
+    gallery.appendChild(img);
+});
+});
+</script>
+
+            <h1>The Cute Dogs Need Home</h1>
+            <p>Use the nationwide database of dogs looking for good homes below! Search by zip code to meet available dogs in your area. Please note, these dogs are from rescues and shelters nationwide and are not available through the ASPCA. If you live in New York City and are hoping to adopt from us, check out the dogs available at our Adoption Center.</p>
+            <img src="images/barry.png" alt="barry" width="100">
+            <img src="images/lola.png" alt="lola" width="100">
+            <img src="images/noah.png" alt="Noah" width="100">
+            
+                </main>
+    <footer>&copy; Copyright 2023</footer>
+    </div>
+    </body>
+</html>

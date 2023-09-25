@@ -1,5 +1,7 @@
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Pet Adoption Gallery Page</title>
     <link rel="stylesheet" href="style.css">
     <ul>
@@ -20,6 +22,32 @@
             width: 300px;
             height: 200px;
             object-fit: cover;
+            cursor: pointer; /* Add cursor pointer for clickable photos */
+        }
+
+        /* CSS styles for the information box */
+        .info-box {
+            display: none;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-box h2 {
+            font-size: 18px;
+            margin-top: 0;
+        }
+
+        .info-box p {
+            font-size: 14px;
+        }
+
+        .close-link {
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -30,16 +58,16 @@
         <main>
             <h1>More Picutres for Your Future Dogs</h1>
             <p>Here is more choice for your future family members.</p>
-            <img src="dogpc2.jpg" alt="dogs" width="100" height="80">
-            <img src="dogpc3.jpg" alt="dogs" width="100" height="80">
-            <img src="dog4.jpg" alt="dogs" width="100" height="80">
-            <img src="dog5.jpg" alt="dogs" width="100" height="80">
-            <img src="dog6.jpg" alt="dogs" width="100" height="80">
-            <img src="dog7.jpg" alt="dogs" width="100" height="80">
-            <img src="dog8.jpg" alt="dogs" width="100" height="80">
-            <img src="dog9.jpg" alt="dogs" width="100" height="80">
-            <img src="dog10.jpg" alt="dogs" width="100" height="80">
-            <img src="dog11.jpg" alt="dogs" width="100" height="80">
+            <img src="dogpc2.jpg" alt="dogs" width="100" height="80" class="photo">
+            <img src="dogpc3.jpg" alt="dogs" width="100" height="80" class="photo">
+            <img src="dog4.jpg" alt="dogs" width="100" height="80" class="photo">
+            <img src="dog5.jpg" alt="dogs" width="100" height="80" class="photo">
+            <img src="dog6.jpg" alt="dogs" width="100" height="80" class="photo">
+            <img src="dog7.jpg" alt="dogs" width="100" height="80" class="photo">
+            <img src="dog8.jpg" alt="dogs" width="100" height="80" class="photo">
+            <img src="dog9.jpg" alt="dogs" width="100" height="80" class="photo">
+            <img src="dog10.jpg" alt="dogs" width="100" height="80" class="photo">
+            <img src="dog11.jpg" alt="dogs" width="100" height="80" class="photo">
 
     <div class="gallery" id="photoGallery">
         <!-- Photos will be added here using JavaScript -->
@@ -82,7 +110,43 @@ photoArray.forEach(function (photoURL) {
             <img src="images/noah.png" alt="Noah" width="100">
             
                 </main>
+                <!-- Information Box -->
+    <div class="info-box" id="infoBox">
+        <h2>Caption Text</h2>
+        <p>This is some information about the image.</p>
+        <a class="close-link" id="closeInfoBox">Close</a>
+    </div>
     <footer>&copy; Copyright 2023</footer>
     </div>
+    <script>
+        // JavaScript to show/hide the information box
+        document.addEventListener("DOMContentLoaded", function () {
+            const photoElements = document.querySelectorAll(".photo");
+            const infoBox = document.getElementById("infoBox");
+            const closeInfoBox = document.getElementById("closeInfoBox");
+
+            // Function to show the information box
+            function showInfoBox() {
+                infoBox.style.display = "block";
+            }
+
+            // Function to hide the information box
+            function hideInfoBox() {
+                infoBox.style.display = "none";
+            }
+
+            // Event listener for clicking on a photo
+            photoElements.forEach(function (photo) {
+                photo.addEventListener("click", function () {
+                    showInfoBox();
+                });
+            });
+
+            // Event listener for clicking on the close link
+            closeInfoBox.addEventListener("click", function () {
+                hideInfoBox();
+            });
+        });
+    </script>
     </body>
 </html>
